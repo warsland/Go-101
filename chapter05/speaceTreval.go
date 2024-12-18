@@ -5,7 +5,7 @@ import (
 	"math/rand"
 )
 
-var enterpriseName = []string{"Speace Adventures", "SpeaceX          ", "Virgin Galactic  "}
+var enterpriseName = []string{"Speace Adventures", "SpeaceX", "Virgin Galactic"}
 
 const distance = 62100000
 
@@ -20,6 +20,6 @@ func main() {
 		if returned == 1 {
 			cost *= 2
 		}
-		fmt.Printf("%v%8v%9v%12v\n", enterpriseName[rand.Intn(3)], time, re[returned], cost)
+		fmt.Printf("%-17v%8v%9v%12v\n", enterpriseName[rand.Intn(3)], time, re[returned], cost)
 	}
 }
