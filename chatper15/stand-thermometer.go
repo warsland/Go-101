@@ -6,7 +6,7 @@ type celsius float64
 type fahrenherit float64
 type getRowFn func(row int) (string, string) //声明新函数类型，返回值为两个string类型变量
 
-func (c celsius) fahrenherit() fahrenherit {
+func (c celsius) fahrenherit() fahrenherit { //声明方法
 	return fahrenherit((c * 9.0 / 5.0) + 32.0)
 }
 func (f fahrenherit) celsius() celsius {
