@@ -99,7 +99,7 @@ func sum(nums ...int) int {
 }
 ```
 
-**调用**：用 **`slice...`** 展开切片。
+&emsp;**调用**：用 **`slice...`** 展开切片。
 ```go
 s := []int{1, 2, 3}
 fmt.Println(sum(s...)) // 输出6
